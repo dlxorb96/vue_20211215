@@ -1,26 +1,30 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <h3>header</h3>
+    <hr />
+    <!-- 메뉴에 해당 -->
+    <div>
+      <router-link to="/">홈화면</router-link>
+      <router-link to="/login">로그인</router-link>
+      <router-link to="/join">회원가입</router-link>
+      <router-link to="/board">게시판</router-link>
+      <router-link to="/form">form</router-link>
+    </div>
+
+    <router-view></router-view>
+
+    <hr />
+    <h3>footer</h3>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import 'assets/css/mystyle1.css';
+
 </style>
