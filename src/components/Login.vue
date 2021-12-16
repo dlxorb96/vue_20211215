@@ -5,13 +5,13 @@
             <hr />
 
             <label>아이디</label>
-            <input type="text" ref="userid" v-model="userid" placeholder="아이디"/>
+            <input type="text" ref="userid" v-model="member.userid" placeholder="아이디"/>
             <br />
             <label>암호</label>
-            <input type="password" v-model="userpw" ref="userpw" placeholder="암호" />
+            <input type="password" v-model="member.userpw" ref="userpw" placeholder="암호" />
             <br />
             <label></label>
-            <input type="button" value="로그인" @click="handleLogin"/>
+            <input type="button" value="로그인" @click="handleLogin()"/>
             <input type="button" value="회원가입" />
         </div>
         
@@ -24,13 +24,13 @@
         //메소드 == 함수 == 기능 구현
         methods:{
             handleLogin(){
-                if(this.userid ===''){
+                if(this.member.userid ===''){
                     this.$refs.userid.focus();
                     console.log(this)
                     alert('아이디를 입력하세요.');
                     return false;
                 }
-                else if(this.userpw ===''){
+                else if(this.member.userpw ===''){
                     this.$refs.userpw.focus();
                     alert('암호를 입력하세요.');
                     return false;
@@ -42,9 +42,12 @@
         // 상태(state 변수 설정) (자바스크립트 selector)
         data(){
             return{
-                userid:'',
-                userpw:'',
+                member:{
+                    userid:'',
+                    userpw:'',
 
+                }
+                
             }
         },
 
