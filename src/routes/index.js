@@ -12,6 +12,9 @@ import  Exam10 from '@/components/Exam10.vue';
 import  Exam21 from '@/components/Exam21.vue';
 import  Admin from '@/components/Admin.vue';
 import  Titanic from '@/components/Titanic.vue';
+import  Table1 from '@/components/Table1.vue';
+import  Table2 from '@/components/Table2.vue';
+import  Table3 from '@/components/Table3.vue';
 
 // 2. URL과 함께 사용할 컴포넌트 연결
 const routes = [
@@ -37,6 +40,12 @@ const routes = [
     { path:'/admin', name:"Admin", component:Admin },
     // localhost:8000/titanic
     { path:'/titanic', name:"Titanic", component:Titanic },
+    // localhost:8000/table1
+    { path:'/table1', name:"Table1", component:Table1 },
+    // localhost:8000/table2
+    { path:'/table2', name:"Table2", component:Table2 },
+    // localhost:8000/table3
+    { path:'/table3', name:"Table3", component:Table3 },
 ];
   
 const router = createRouter({
