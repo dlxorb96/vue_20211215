@@ -20,12 +20,6 @@
                     <td><input type="text" v-model="tmp.movieNm"></td>
                     <td><input type="text" v-model="tmp.openDt"></td>
                     <td><input type="text" v-model="tmp.salesAcc"></td>
-                    
-                    <!-- <th>{{}}</th>
-                    <th>{{}}</th>
-                    <th>{{}}</th>
-                    <th>{{}}</th>
-                    <th>{{}}</th> -->
                 </tr>
             </tbody>
         </table>

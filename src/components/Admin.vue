@@ -23,11 +23,6 @@
                 </tbody>
             </table>
 
-        {{code}}
-        {{name}}
-        {{price}}
-        {{quantity}}
-
         </div>
         <div v-else-if="menu ===2">
             <h5>물품관리</h5>    

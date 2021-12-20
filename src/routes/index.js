@@ -11,10 +11,13 @@ import  Iris1 from '@/components/Iris1.vue';
 import  Exam10 from '@/components/Exam10.vue';
 import  Exam21 from '@/components/Exam21.vue';
 import  Admin from '@/components/Admin.vue';
+import  Admin2 from '@/components/Admin2.vue';
 import  Titanic from '@/components/Titanic.vue';
 import  Table1 from '@/components/Table1.vue';
 import  Table2 from '@/components/Table2.vue';
 import  Table3 from '@/components/Table3.vue';
+import  CompProp from '@/components/CompProp.vue';
+import  CompSlot from '@/components/CompSlot.vue';
 
 // 2. URL과 함께 사용할 컴포넌트 연결
 const routes = [
@@ -38,6 +41,8 @@ const routes = [
     { path:'/exam21', name:"Exam21", component:Exam21 },
     // localhost:8000/admin
     { path:'/admin', name:"Admin", component:Admin },
+    // localhost:8000/admin2
+    { path:'/admin2', name:"Admin2", component:Admin2 },
     // localhost:8000/titanic
     { path:'/titanic', name:"Titanic", component:Titanic },
     // localhost:8000/table1
@@ -46,6 +51,10 @@ const routes = [
     { path:'/table2', name:"Table2", component:Table2 },
     // localhost:8000/table3
     { path:'/table3', name:"Table3", component:Table3 },
+    // localhost:8000/compprop
+    { path:'/compprop', name:"CompProp", component:CompProp },
+    // localhost:8000/compslot
+    { path:'/compslot', name:"CompSlot", component:CompSlot },
 ];
   
 const router = createRouter({

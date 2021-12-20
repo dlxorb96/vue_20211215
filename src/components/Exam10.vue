@@ -30,12 +30,13 @@
 </template>
 
 <script>
+
     import axios from 'axios';
     export default {
         created(){
             this.handleData()
         },
-
+        
         data(){
             return{
                 items: []
@@ -48,13 +49,11 @@
                 //번호, 아이디, 이름, 나이, 국어점수, 영어점수, 수학점수,
                 // table로 출력하시오.
                 const headers = { 'Content-type':'application/json' };
-
                 const response = await axios.get(url, headers);
                 console.log(response)
                 if(response.status === 200 && response.data.ret === "y"){
                 this.items = response.data.data
                 console.log(this.items)
-
                 }
             }
         }
