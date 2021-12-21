@@ -1,8 +1,32 @@
 <template>
     <div>
         <h4>메뉴2</h4>
-        <h5>물품관리</h5>    
-            <table>
+        <h5>물품관리</h5>  
+            <!-- <template> -->
+                <el-table :data="items" style="width: 100%">
+                    <el-table-column label="Id">
+                        <template #default = "scope">
+                            <el-input v-model="scope.row.id"  type="text" placeholder="Please input" />
+                        </template>
+                    </el-table-column>
+
+                    <el-table-column  label="Name" >
+                        <template #default = "scope">
+                            <el-input v-model="scope.row.name"  type="text" placeholder="Please input" />
+                        </template>
+                    </el-table-column>
+
+
+                    <el-table-column  label="Age">
+                        <template #default = "scope">
+                            <el-input v-model="scope.row.age"  type="text" placeholder="Please input" />
+                        </template>
+                    </el-table-column>
+
+                </el-table>
+            <!-- </template> -->
+
+            <!-- <table>
                 <thead>
                     <tr>
                         <th>아이디</th>
@@ -17,7 +41,7 @@
                         <td><input type="text" v-model="tmp.age"></td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
     </div>
 </template>
 

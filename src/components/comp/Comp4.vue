@@ -7,7 +7,10 @@
         <slot name="left"></slot>
         <hr />
 
-        <slot name="center"></slot>
+        <slot name="center">
+            <!-- 슬롯가운데 부모 컴포넌트에 값이 없으면 default 값으로 나온다 -->
+            <h5>센터다</h5>
+        </slot>
         <hr />
 
         <slot name="right"></slot>

@@ -3,9 +3,11 @@ import App from './App.vue'
 
 // 1. 내가 직접 만든 기능 설정 파일
 // router 설정
+// CMD>npm i vue-route@next --save
 import routes from './routes/index.js'
 
 // element-plus
+// CMD>npm i element-plus --save
 import ElementPlus from 'element-plus';
 import 'element-plus/theme-chalk/index.css';
 

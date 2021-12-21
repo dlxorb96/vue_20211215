@@ -35,6 +35,8 @@
       <el-menu-item index="5-10">titanic</el-menu-item>
       <el-menu-item index="5-11">CompProp</el-menu-item>
       <el-menu-item index="5-12">CompSlot</el-menu-item>
+      <el-menu-item index="5-13">upload1</el-menu-item>
+      <el-menu-item index="5-14">compslotscope</el-menu-item>
     </el-sub-menu>
     <el-menu-item index="6" disabled>Info</el-menu-item>
     <el-menu-item index="7">Orders</el-menu-item>
@@ -72,6 +74,8 @@
       <router-link to="/table3">table3</router-link>
       <router-link to="/compprop">CompProp</router-link>
       <router-link to="/compslot">CompSlot</router-link>
+      <router-link to="/upload1">Upload1</router-link>
+      <router-link to="/compslotscope">compslotscope</router-link>
     </div>
 
 

@@ -18,6 +18,8 @@ import  Table2 from '@/components/Table2.vue';
 import  Table3 from '@/components/Table3.vue';
 import  CompProp from '@/components/CompProp.vue';
 import  CompSlot from '@/components/CompSlot.vue';
+import  Upload1 from '@/components/Upload1.vue';
+import  CompSlotScope from '@/components/CompSlotScope.vue';
 
 // 2. URL과 함께 사용할 컴포넌트 연결
 const routes = [
@@ -55,6 +57,10 @@ const routes = [
     { path:'/compprop', name:"CompProp", component:CompProp },
     // localhost:8000/compslot
     { path:'/compslot', name:"CompSlot", component:CompSlot },
+    // localhost:8000/upload
+    { path:'/upload1', name:"Upload1", component:Upload1 },
+    // localhost:8000/compslotscope
+    { path:'/compslotscope', name:"CompSlotScope", component:CompSlotScope },
 ];
   
 const router = createRouter({
