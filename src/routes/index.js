@@ -20,6 +20,11 @@ import  CompProp from '@/components/CompProp.vue';
 import  CompSlot from '@/components/CompSlot.vue';
 import  Upload1 from '@/components/Upload1.vue';
 import  CompSlotScope from '@/components/CompSlotScope.vue';
+import  Shop from '@/components/Shop.vue';
+import  Order from '@/components/Order.vue';
+import  OrderAction from '@/components/OrderAction.vue';
+import  Board1 from '@/components/Board1.vue';
+import  Board1One from '@/components/Board1One.vue';
 
 // 2. URL과 함께 사용할 컴포넌트 연결
 const routes = [
@@ -61,6 +66,16 @@ const routes = [
     { path:'/upload1', name:"Upload1", component:Upload1 },
     // localhost:8000/compslotscope
     { path:'/compslotscope', name:"CompSlotScope", component:CompSlotScope },
+    // localhost:8000/shop
+    { path:'/shop', name:"Shop", component:Shop },
+    // localhost:8000/order
+    { path:'/order', name:"Order", component:Order },
+    // localhost:8000/orderAction
+    { path:'/orderAction', name:"OrderAction", component:OrderAction },
+    // localhost:8000/board1
+    { path:'/board1', name:"Board1", component:Board1 },
+    // localhost:8000/board1One
+    { path:'/board1One', name:"Board1One", component:Board1One },
 ];
   
 const router = createRouter({

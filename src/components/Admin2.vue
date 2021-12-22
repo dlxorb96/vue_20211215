@@ -57,7 +57,7 @@
         },
         methods:{
             changeMenu(no){
-                this.menu = no;
+                // this.menu = no;
                 this.currentComp = this.compList[no]
             },
             handleComp(no){

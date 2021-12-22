@@ -1,6 +1,7 @@
 <template>
   <div>
-      <el-container>
+    <!-- 고객용 페이지 레이아웃 -->
+      <el-container v-if= "admin === false">
       <el-header> <el-menu
     :default-active="activeIndex"
     class="el-menu-demo"
@@ -11,6 +12,7 @@
     <el-menu-item index="2">로그인</el-menu-item>
     <el-menu-item index="3">회원가입</el-menu-item>
     <el-menu-item index="4">마이페이지</el-menu-item>
+    <el-menu-item index="8"><a href="/admin2">관리자</a></el-menu-item>
     <el-sub-menu index="5">
       <template #title>Workspace</template>
       <el-menu-item index="5-1">로그인</el-menu-item>
@@ -37,6 +39,11 @@
       <el-menu-item index="5-12">CompSlot</el-menu-item>
       <el-menu-item index="5-13">upload1</el-menu-item>
       <el-menu-item index="5-14">compslotscope</el-menu-item>
+      <el-menu-item index="5-15">shop</el-menu-item>
+      <el-menu-item index="5-16">order</el-menu-item>
+      <el-menu-item index="5-17">OrderAction</el-menu-item>
+      <el-menu-item index="5-18">Board1</el-menu-item>
+      <el-menu-item index="5-19">Board1One</el-menu-item>
     </el-sub-menu>
     <el-menu-item index="6" disabled>Info</el-menu-item>
     <el-menu-item index="7">Orders</el-menu-item>
@@ -50,6 +57,13 @@
           <el-footer>Footer</el-footer>
         </el-container>
       </el-container>
+    </el-container>
+
+    <!-- 관리자 페이지 -->
+    <el-container v-else-if= "admin === true">
+      <el-header>Header</el-header>
+      <el-main><router-view></router-view></el-main>
+      <el-footer>Footer</el-footer>
     </el-container>
 
 
@@ -76,6 +90,8 @@
       <router-link to="/compslot">CompSlot</router-link>
       <router-link to="/upload1">Upload1</router-link>
       <router-link to="/compslotscope">compslotscope</router-link>
+      <router-link to="/shop">shop</router-link>
+      <router-link to="/board1">board1</router-link>
     </div>
 
 
@@ -88,9 +104,17 @@
 
 export default {
 
+  // F5 수행시 실행(redux === store === vuex)
+  created(){
+    this.handelAdmin()
+  },
+  mounted(){
+
+  },
   data(){
     return{
-      activeIndex: '4'
+      activeIndex: '4',
+      admin : false
     }
   },
 
@@ -106,8 +130,19 @@ export default {
         else if(idx ==='3'){
           this.$router.push({path:'/join'});
         }
-        else if(idx ==='2'){
-          this.$router.push({path:'/login'});
+        else if(idx ==='8'){
+          this.$router.push({path:'/admin2'});
+        }
+      },
+      handelAdmin(){
+        // console.log(window.location.pathname)
+        // console.log(window.location)
+
+        if(window.location.pathname === '/admin2' || window.location.pathname === '/admin'){
+          this.admin = true
+        }
+        else{
+          this.admin = false
         }
       }
     }

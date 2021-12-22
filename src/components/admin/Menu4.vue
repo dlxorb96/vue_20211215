@@ -21,7 +21,6 @@
                         style="width: 50px; cursor: pointer;">
                     </td>
                     <td><input v-model="product.name[idx]" type="text" placeholder="상품명"></td>
-                    <td><input v-model="product.name[idx]" type="text" placeholder="상품명"></td>
                     <td><input v-model="product.price[idx]" type="text" placeholder="가격"></td>
                     <td><input v-model="product.quantity[idx]" type="text" placeholder="판매수량"></td>
                 </tr>

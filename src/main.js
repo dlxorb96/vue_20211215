@@ -11,6 +11,7 @@ import routes from './routes/index.js'
 import ElementPlus from 'element-plus';
 import 'element-plus/theme-chalk/index.css';
 
+// import element-plus/icons-vue from 'element-plus-icons'
 // createApp(App).mount('#app')를 끊었다.
 // 기능추가 하기 편하게
 const app = createApp(App)
